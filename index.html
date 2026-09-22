@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Device Status</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>DEVICE STATUS</h1>
+        <div id="connection">🟢 Dashboard Online</div>
+    </header>
+
+    <main>
+
+        <section class="device-card">
+
+            <div class="device-header">
+                <div>
+                    <h2>💻 <span id="device-name">Detecting device...</span></h2>
+                    <p id="device-type">Detecting device...</p>
+                </div>
+
+                <div class="online">
+                    🟢 ONLINE
+                </div>
+            </div>
+
+            <div class="status-grid">
+
+                <div class="status-box">
+                    <h3>🔋 Battery</h3>
+                    <p id="battery">Unknown</p>
+
+                    <div class="progress">
+                        <div id="battery-bar"></div>
+                    </div>
+                </div>
+
+                <div class="status-box">
+                    <h3>🌐 Internet</h3>
+                    <p id="internet">Checking...</p>
+                </div>
+
+                <div class="status-box">
+                    <h3>🎧 Audio</h3>
+                    <p id="audio">Checking...</p>
+                </div>
+
+                <div class="status-box">
+                    <h3>🔊 Volume</h3>
+                    <p id="volume">Unknown</p>
+                </div>
+
+                <div class="status-box update-box">
+                    <h3>🔄 Updates</h3>
+                    <p id="updates">Checking...</p>
+
+                    <div class="progress">
+                        <div id="update-bar"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
